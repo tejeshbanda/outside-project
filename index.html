@@ -25,6 +25,67 @@
     }
 
 
+    body {
+  margin: 0;
+}
+
+.containered {
+  background-color: #026b96;
+  margin-top: 20rem;
+  position: relative;
+}
+
+.containered::before {
+   background: url("https://dzhblogstorage.blob.core.windows.net/public/curve.svg") center bottom no-repeat;
+  bottom: 100%;
+  content: '';
+  height: 103px;
+  position: absolute;
+  width: 100%;
+}
+
+.tabs-containered {
+  color: white;
+  padding: 1.5rem;
+}
+
+.tabs-buttons {
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: .4rem .8rem;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 980px) {
+  .tabs-containered {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 2rem;
+    width: 800px;
+  }
+
+  .tab-content {
+    flex-direction: row;
+  }
+  
+  .tab-content .text {
+    margin-right: 1rem;
+  }
+}
+
+
+
+
   </style>
 </head>
 <body>
@@ -50,7 +111,9 @@
           
    <li class="nav-item">
                 <a class="nav-link" href="#">MORE</a>
-            </li>      
+            </li>  
+
+            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="MAPPING?"> CAN VIEW MORE</button>    
 </nav>
 <br>
 
@@ -70,17 +133,25 @@
 
   
       
-       <img src="img/car.jpg" class="mx-auto d-block" style="width:50%">
+       <img src="D:\Google Downloads\car.jpg" class="mx-auto d-block" style="width:50%">
     </div>
 </div>
 <br>
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1>MY World</h1>      
-    <p>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+    
+<div class="media">
+  <img class="mr-3" src="D:\Google Downloads\car.jpg" alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0">ACCORDING</h5>
+    <p>Have the privilege of enabling NBA Accreditation for 600+ programs since 2004. Ensures NBA Accreditation through Faculty ‘Change’ Process, Quality Course Files, Lab Manuals, Skill Programs, Co/Extra Curricular Activities, Projects Labs etc. & through attainments of COs/ POs/PSOs and CQI. Our audit reports are our hallmarks and overcoming the gaps ensures 100% Guaranteed NBA Accreditation. Even attained 5 Years NBA Accreditation for select programs by attaining 780+ Marks!. </p>
+   
+    </div>
+</div>
   </div>
 </div>
+
 
 
 
@@ -119,7 +190,9 @@
 </div>
 
 <br>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,112C480,128,600,192,720,208C840,224,960,192,1080,154.7C1200,117,1320,75,1380,53.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,112C480,128,600,192,720,208C840,224,960,192,1080,154.7C1200,117,1320,75,1380,53.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+
+</svg>
 
 <br>
 <br>
@@ -141,7 +214,7 @@
     <!-- Team Member 1 -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="img/per.jpg" class="card-img-top" alt="...">
+        <img src="D:\Google Downloads\per.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Team Member</h5>
           <div class="card-text text-black-50">NAME</div>
@@ -149,10 +222,10 @@
         </div>
       </div>
     </div>
-
+    <!-- Team Member 2 -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="img/per.jpg" class="card-img-top" alt="...">
+        <img src="D:\Google Downloads\per.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Team Member</h5>
           <div class="card-text text-black-50">NAME</div>
@@ -163,7 +236,7 @@
     <!-- Team Member 3 -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="img/per.jpg" class="card-img-top" alt="...">
+        <img src="D:\Google Downloads\per.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Team Member</h5>
           <div class="card-text text-black-50">NAME</div>
@@ -171,9 +244,10 @@
         </div>
       </div>
     </div>
+    <!-- Team Member 4 -->
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="img/per.jpg" class="card-img-top" alt="...">
+        <img src="D:\Google Downloads\per.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Team Member</h5>
           <div class="card-text text-black-50">NAME</div>
@@ -183,7 +257,7 @@
     </div>
   <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="img/per.jpg" class="card-img-top" alt="...">
+        <img src="D:\Google Downloads\per.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Team Member</h5>
           <div class="card-text text-black-50">NAME</div>
@@ -193,7 +267,7 @@
     </div>
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="img/per.jpg" class="card-img-top" alt="...">
+        <img src="D:\Google Downloads\per.jpg" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Team Member</h5>
           <div class="card-text text-black-50">NAME</div>
@@ -222,14 +296,23 @@
       </div>
     </div>
   </div>
+  <!-- /.row -->
 
 </div>
-
-<div class="container-fluid">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-<div class="row">
-    <div class="col-md-4"><img class="img-responsive" src="http://placehold.it/400x120"></div>
-    <div class="col-md-8">I want to be on the right side of the responsive image</div>
+<!-- /.container -->
+<div class="containered">
+  <div class="tabs-containered">
+    
+    <div class="tab-content">
+      <div class="text">
+        <h1 style="text-align: center;">HELLO WORLD</h1>
+        
+      </div>
+    </div>
+  </div>
 </div>
+
+
 </body>
 
 
